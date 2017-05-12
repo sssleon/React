@@ -1,11 +1,15 @@
 ReactDOM.render(
-        <h1>Hello, world!</h1>,
+		<div>
+		<h3>简单输出：</h3>
+        <h3>Hello, world!</h3>
+		</div>,
         document.getElementById('example1')
       );
 //计算
 ReactDOM.render(
 	<div>
-		<h1>{1+1}</h1>
+		<h3>计算1+1：</h3>
+		<h3>{1+1}</h3>
 	</div>,
 	document.getElementById('example2')
 	);
@@ -13,7 +17,8 @@ ReactDOM.render(
 var i=1;
 ReactDOM.render(
 	<div>
-		<h1>{i==1?"True":"False"}</h1>
+		<h3>三元表达式：</h3>
+		<h3>{i==1?"True":"False"}</h3>
 	</div>,
 	document.getElementById('example3')
 	);
@@ -24,7 +29,8 @@ var myStyle={
 };
 ReactDOM.render(
 	<div>
-		<h1 style={myStyle}>样式演示</h1>
+		<h3>样式演示：</h3>
+		<h3 style={myStyle}>样式演示</h3>
 	</div>,
 	document.getElementById('example4')
 );
@@ -34,7 +40,10 @@ var arr=[
 	<h4>测试数组2</h4>
 ];
 ReactDOM.render(
-	<div>{arr}</div>,
+	<div>
+	<h3>输出数组：</h3>
+	{arr}
+	</div>,
 	document.getElementById('example5')
 );
 

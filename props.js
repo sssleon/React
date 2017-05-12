@@ -19,7 +19,7 @@ var WebSite=React.createClass({
 var Name=React.createClass({
     render:function(){
         return (
-            <h1>{this.props.name}</h1>
+            <h3>{this.props.name}</h3>
         );
     }
 });
@@ -43,10 +43,13 @@ var MyTitle=React.createClass({
         title:React.PropTypes.string.isRequired,
     },
     render:function(){
-        return (<h1>{this.props.title}</h1>)
+        return (<h3>{this.props.title}</h3>)
     }
 });
 ReactDOM.render(
-    <MyTitle title={title} />,
+    <div>
+        <h3>Props验证：</h3>
+        <MyTitle title={title} />
+    </div>,
     document.getElementById('example12')
 )
