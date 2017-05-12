@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Hello React!</title>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+	<style> 
+	.table{border-right:1px solid black;border-bottom:1px solid black} 
+	.table td{border-left:1px solid black;border-top:1px solid black;width: 200px} 
+	</style> 
+</head>
+	<body>
+		<table class="table">
+			<tr>
+				<td colspan="5"><h1>React基础</h1></td>
+			</tr>
+			<tr>
+				<td><div id="example1"></div></td>
+				<td><div id="example2"></div></td>
+				<td><div id="example3"></div></td>
+				<td><div id="example4"></div></td>
+				<td><div id="example5"></div></td>
+				<script type="text/babel" src="base.js"></script>
+			</tr>
+			<tr>
+				<td colspan="5"><h1>React组件</h1></td>
+			</tr>
+			<tr>
+				<td><div id="example6"></div></td>
+				<td><div id="example7"></div></td>
+				<td><div id="example8"></div></td>
+				<td><div id="example9"></div></td>
+				<td><div id="example10"></div></td>
+				<script type="text/babel" src="group.js"></script>
+			</tr>
+		</table>
+		<div id="example11"></div>
+		<div id="example12"></div>
+		<script type="text/babel" src="props.js"></script>
+	</body>
+</html>
